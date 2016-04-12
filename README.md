@@ -1,11 +1,13 @@
-## PokerTexter
+# PokerTexter
 
-This is the source code for an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text a number with your cards and number of other players, it texts you back some pre-flop statistics:
+This is the source code for PokerTexter, an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text the PokerTexter phone number with your cards and number of other players, and it texts you back some pre-flop statistics:
 * % Chance of Winning
 * % Chance of Tying
 * Expected Unit Gain: suppose you bet $1, everyone else bets $1 each, and no further bets are made. The expected unit gain is the average amount of money you expect to win (with those two cards and that number of players).
 
-If you send a text message to a   If you statistics. For example: suppose you're playing 
+For example: suppose you're playing Poker with three other people. You draw a nine of hearts and a seven of clubs. You text PokerTexter that you have a nine and a seven unsuited with three other players. It texts you back that your probability of winning the hand is 21.52%, your probability of tying is 2.82%, and your expected unit gain is -0.111. Since the expected unit gain is quite negative, it would be unwise to play the hand.
+
+![Example of Use][https://raw.githubusercontent.com/Datamine/PokerTexter/master/example.png]
 
 what you need to do
 
