@@ -1,3 +1,12 @@
+## PokerTexter
+
+This is the source code for an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text a number with your cards and number of other players, it texts you back some pre-flop statistics:
+* % Chance of Winning
+* % Chance of Tying
+* Expected Unit Gain: suppose you bet $1, everyone else bets $1 each, and no further bets are made. The expected unit gain is the average amount of money you expect to win (with those two cards and that number of players).
+
+If you send a text message to a   If you statistics. For example: suppose you're playing 
+
 what you need to do
 
 1. make a twilio account
