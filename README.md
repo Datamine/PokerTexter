@@ -2,7 +2,7 @@
 
 *The documentation for this app is also [on my website](www.johnloeber.com/docs/pokertexter.html).*
 
-This is the source code for PokerTexter, an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text the PokerTexter phone number with your cards and number of other players, and it texts you back some pre-flop statistics:
+This repository contains source code and setup instructions for PokerTexter, an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text the PokerTexter phone number with your cards and number of other players, and it texts you back some pre-flop statistics:
 * % Chance of Winning
 * % Chance of Tying
 * Expected Unit Gain: suppose you bet $1, everyone else bets $1 each, and no further bets are made. The expected unit gain is the average amount of money you expect to win (with those two cards and that number of players).
