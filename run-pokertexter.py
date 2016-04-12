@@ -30,7 +30,7 @@ app = Flask(__name__)
 def get_rank(string):
     """
     Parses a string representing a rank. Returns a string in the correct form
-    for the lookup table. Returns -1 if the input could not be parsed.
+    for the lookup table. Returns None if the input could not be parsed.
     """
     if "ace" in string or string=="a":
         return "A"
@@ -59,13 +59,13 @@ def get_rank(string):
     if "two" in string or string=="2":
         return "2"
     else:
-        return -1
+        return None
 
 def get_suiting(string):
     """
     Parses a string representing the suiting (suited/offsuit) of the player's 
     two hole cards. Returns a string in the correct form for the lookup table.
-    Returns -1 if the input could not be parsed.
+    Returns None if the input could not be parsed.
     """
     if "of" in string or "un" in string:
         # handles offsuit, unsuited, etc.
@@ -73,14 +73,14 @@ def get_suiting(string):
     elif "suit" in string:
         return "suited"
     else:
-        return -1
+        return None
 
 def get_players(string):
     """
     Parses a string representing the number of other players (i.e. excluding 
     the player) in the round. Currently supports only 1-9 other players. 
     Returns a string in the correct form for the lookup table.
-    Returns -1 if the input could not be parsed.
+    Returns None if the input could not be parsed.
     """
     if "nine" in string or string=="9":
         return "9"
@@ -101,7 +101,7 @@ def get_players(string):
     if "one" in string or string=="1":
         return "1"
     else:
-        return -1
+        return None
 
 @app.route("/", methods=['GET', 'POST'])
 def respond():
@@ -141,10 +141,10 @@ def respond():
     players = get_players(message_list[3])
 
     # check that all the parsed input is valid
-    if players==-1:
+    if players==None:
         resp.message("Error! Only 1-9 other players are currently supported.")
         return str(resp)
-    if any(map(lambda x: x==-1, [rank1, rank2, suiting])):
+    if any(map(lambda x: x==None, [rank1, rank2, suiting])):
         resp.message(STANDARD_ERRORMSG)
         return str(resp)
     if rank1==rank2 and suiting == "suited":
