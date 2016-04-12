@@ -54,6 +54,8 @@ While the probabilities of winning and tying scale as you would expect in the nu
 
 This instruction set assumes that you're using the Twilio free trial. Regrettably, to remind you that you're on their "free" tier, they prepend "Sent from your Twilio trial account -" to every text message that PokerTexter sends. You can easily fix this by upgrading from Twilio free to Twilio Hobby, but that costs $7 a month.
 
+The scope of this app is currently quite limited: it doesn't permit you to submit cards beyond your initial two. It is easily possible to also support additional known cards (e.g. cards on the table, known burned cards, etc.) but the usefulness of such features is limited because additional cards are made known only in the later stages of the game, when probability can be more easily intuitively approximated (it's easy to figure out your outs and their approximate odds), and the psychological aspect of the game becomes more important. Nonetheless, I aim to add such features in the near future.
+
 ## Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
