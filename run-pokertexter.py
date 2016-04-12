@@ -176,5 +176,5 @@ def respond():
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(environ.get('PORT', 5000))
-    # Debugging disabled for production build. http://werkzeug.pocoo.org/docs/0.11/debug/
+    # Debugging disabled for production build. 
     app.run(host='0.0.0.0', port=port, debug=False)
