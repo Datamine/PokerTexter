@@ -21,7 +21,7 @@ For example: suppose you're playing Poker with three other people. You are dealt
 ## Components
 
 Following is a list of files in this repository and notes on what they're for:
-* destroy.sh: destroys erroneously created Heroku apps. If you're having trouble launching, then you may in the process create lots of apps. This script clears them up.
+* destroy.sh: destroys all created Heroku apps. If you're having trouble launching, then you may in the process create lots of apps. This script clears them up.
 * launch.sh: launches the Heroku app and scales it with one dyno [worker]. Once you've done this, you can use PokerTexter from your phone.
 * lookup-table-*n:* this is a lookup table, mapping any starting hand (on a table with *n* players) to probabilities and expected gains.
 * Procfile: necessary for the Heroku app to run.
