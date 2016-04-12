@@ -1,5 +1,7 @@
 # PokerTexter
 
+*The documentation for this app is also [on my website](www.johnloeber.com/docs/pokertexter.html). *
+
 This is the source code for PokerTexter, an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text the PokerTexter phone number with your cards and number of other players, and it texts you back some pre-flop statistics:
 * % Chance of Winning
 * % Chance of Tying
@@ -9,7 +11,6 @@ For example: suppose you're playing Poker with three other people. You are dealt
 
 ![Example of Use](https://raw.githubusercontent.com/Datamine/PokerTexter/master/example.png)
 
-The documentation for this app is also [on my website](www.johnloeber.com/docs/pokertexter.html). 
 
 ## Notes and Terminology
 
