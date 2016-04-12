@@ -52,6 +52,8 @@ If you make any changes to `run-pokertexter.py` or to any of the other files in 
 
 While the probabilities of winning and tying scale as you would expect in the number of players, the expected gains change sign in some cases. For example, if you're playing with nine other players, a 9-K offsuit has an expected gain of -0.0036. It would be inadvisable to play that hand. However, if you're playing with two other players, a 9-K offsuit has an expected gain of 0.184. You'd want to play that hand.
 
+This instruction set assumes that you're using the Twilio free trial. Regrettably, to remind you that you're on their "free" tier, they prepend "Sent from your Twilio trial account -" to every text message that PokerTexter sends. You can easily fix this by upgrading from Twilio free to Twilio Hobby, but that costs $7 a month.
+
 ## Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
