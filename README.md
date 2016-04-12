@@ -54,7 +54,7 @@ If you make any changes to `run-pokertexter.py` or to any of the other files in 
 
 While the probabilities of winning and tying scale as you would expect in the number of players, the expected gains change sign in some cases. For example, if you're playing with nine other players, a 9-K offsuit has an expected gain of -0.0036. It would be inadvisable to play that hand. However, if you're playing with two other players, a 9-K offsuit has an expected gain of 0.184. You'd want to play that hand.
 
-This instruction set assumes that you're using the Twilio free trial. Regrettably, to remind you that you're on their "free" tier, they prepend "Sent from your Twilio trial account -" to every text message that PokerTexter sends. You can easily fix this by upgrading from Twilio free to Twilio Hobby, but that costs $7 a month.
+This instruction set assumes that you're using the Twilio free trial. Regrettably, to remind you that you're on their "free" tier, they prepend "Sent from your Twilio trial account -" to every text message that PokerTexter sends. You can immediately fix this by upgrading from Twilio free to Twilio Hobby, but that costs $7 a month.
 
 There are some other limitations on the app because you're using both Twilio's and Heroku's free tiers. Heroku's free tier lets you run an app only for 18 hours out of 24. Realistically, this should not be a problem. If you want to run an app for more than 18 hours out of 24, you'll need to recreate it after 18 hours to avoid the limit. There are also a few [limits to Twilio's free tier](https://www.twilio.com/help/faq/twilio-basics/how-does-twilios-free-trial-work), though none that are immediately of concern.
 
