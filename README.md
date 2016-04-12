@@ -27,8 +27,8 @@ Following is a list of files in this repository and notes on what they're for:
 * `Procfile`: necessary for the Heroku app to run.
 * `requirements.txt`: requirements for `run-pokertexter.py`. Heroku needs the requirements, so as to install any necessary packages for the app.
 * `deprecated`: folder containing items that are not essential to `run-pokertexter.py`.
-* `deprecated/generate-lookup-table.py`: for a number of players *n*, generate `lookup-table-n`. Relies on the `deuces` library.
-* `deprecated/deuces`: the [deuces library](https://github.com/worldveil/deuces) for fast poker hand evaluation.
+* `generate-lookup-tables/generate-lookup-table.py`: for a number of players *n*, generate `lookup-table-n`. Relies on the `deuces` library.
+* `generate-lookup-tables/deuces`: the [deuces library](https://github.com/worldveil/deuces) for fast poker hand evaluation.
 
 ## Launch Instructions
 

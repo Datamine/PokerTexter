@@ -159,7 +159,7 @@ def respond():
         lower, higher = rank2, rank1
 
     # get the right lookup table
-    lookup_table = "lookup-table-" + players
+    lookup_table = "lookup-tables/lookup-table-" + players
     
     with open(lookup_table,"r") as lookup:
         for line in lookup:
