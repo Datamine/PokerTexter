@@ -46,6 +46,7 @@ Following are the steps you need to take to get PokerTexter to run. Note that th
 10. Go to your [Twilio Numbers Page](https://www.twilio.com/user/account/phone-numbers/incoming) and click on your Twilio phone number. You'll get a page where you can set various settings for that number. Toward the bottom there will be a *Messaging* subheader, and a field *Request URL*. Copy-paste your Heroku app's URL (from the previous step) into this field and save your changes.
 11. Go back to your terminal, and type `heroku ps:scale web=1` to add a worker.
 12. You can check the status of your app with `heroku logs --tail`.
+13. Now you can use your personal mobile phone to send messages to your Twilio Phone Number (PokerTexter). You should always receive a response, even for incorrectly formatted input. If you're receiving responses: congratulations! You're all set up. 
 
 If you make any changes to `run-pokertexter.py` or to any of the other files in `PokerTexter`, you will need to relaunch the app for the changes to propagate. You can relaunch easily by typing `./launch`. No other steps will be necessary, **unless** you create a new Heroku app and thereby create a new Heroku app URL, in which case you'll need to amend your Twilio Numbers Page appropriately.
 
@@ -54,6 +55,8 @@ If you make any changes to `run-pokertexter.py` or to any of the other files in 
 While the probabilities of winning and tying scale as you would expect in the number of players, the expected gains change sign in some cases. For example, if you're playing with nine other players, a 9-K offsuit has an expected gain of -0.0036. It would be inadvisable to play that hand. However, if you're playing with two other players, a 9-K offsuit has an expected gain of 0.184. You'd want to play that hand.
 
 This instruction set assumes that you're using the Twilio free trial. Regrettably, to remind you that you're on their "free" tier, they prepend "Sent from your Twilio trial account -" to every text message that PokerTexter sends. You can easily fix this by upgrading from Twilio free to Twilio Hobby, but that costs $7 a month.
+
+There are some other limitations on the app because you're using both Twilio's and Heroku's free tiers. Heroku's free tier lets you run an app only for 18 hours out of 24. Realistically, this should not be a problem. If you want to run an app for more than 18 hours out of 24, you'll need to recreate it after 18 hours to avoid the limit. There are also a few [limits to Twilio's free tier](https://www.twilio.com/help/faq/twilio-basics/how-does-twilios-free-trial-work), though none that are immediately of concern.
 
 The scope of this app is currently quite limited: it doesn't permit you to submit cards beyond your initial two. It is easily possible to also support additional known cards (e.g. cards on the table, known burned cards, etc.) but the usefulness of such features is limited because additional cards are made known only in the later stages of the game, when probability can be more easily intuitively approximated (it's easy to figure out your outs and their approximate odds), and the psychological aspect of the game becomes more important. Nonetheless, I aim to add such features in the near future.
 
