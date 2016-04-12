@@ -9,6 +9,11 @@ For example: suppose you're playing Poker with three other people. You draw a ni
 
 ![Example of Use][https://raw.githubusercontent.com/Datamine/PokerTexter/master/example.png]
 
+# Notes and Terminology
+
+* Some people play Poker *suited*, which is when Spades, Hearts, Clubs, and Diamonds are all ranked, and their ranking is used to break ties. PokerTexter does not support suited play.
+* 
+
 what you need to do
 
 1. make a twilio account
