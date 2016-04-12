@@ -7,7 +7,7 @@ This repository contains source code and setup instructions for PokerTexter, an 
 * % Chance of Tying
 * Expected Unit Gain: suppose you bet $1, everyone else bets $1 each, and no further bets are made. The expected unit gain is the average amount of money you expect to win (with those two cards and that number of players).
 
-For example: suppose you're playing Poker with three other people. You are dealt a nine of hearts and a seven of clubs. You message PokerTexter that you have a nine and a seven unsuited with three other players. It texts you back that your probability of winning the hand is 21.52%, your probability of tying is 2.82%, and your expected unit gain is -0.111. Since the expected unit gain is negative, i.e. you would expect to lose $0.111 on a bet of $1, it would be unwise to play the hand.
+For example: suppose you're playing Poker with three other people. You are dealt a nine of hearts and a seven of clubs. You message PokerTexter that you have a nine and a seven unsuited with three other players. It texts you back that your probability of winning the hand is 21.52%, your probability of tying is 2.82%, and your expected unit gain is -0.111. Since the expected unit gain is negative, i.e. on average you will lose $0.111 on a bet of $1, it would be unwise to play the hand.
 
 ![Example of Use](https://raw.githubusercontent.com/Datamine/PokerTexter/master/example.png)
 
