@@ -32,7 +32,7 @@ Following is a list of files in this repository and notes on what they're for:
 
 ## Launch Instructions
 
-Following are the steps you need to take to get PokerTexter to run. Note that these instructions are dated April 12, 2016: certain steps may change if Twilio or Heroku adjust their products or infrastructure in any way.
+Following are the steps you need to take to get PokerTexter to run. Note that these instructions are dated April 12, 2016: certain steps may change if either Twilio or Heroku adjust their product or infrastructure in any way.
 
 1. Make a [Twilio](https://www.twilio.com/) account.
 2. Get a Twilio phone number. It's free.
