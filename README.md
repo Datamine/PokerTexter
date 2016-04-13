@@ -1,6 +1,6 @@
 # PokerTexter
 
-*The documentation for this app is also [on my website](http://www.johnloeber.com/docs/pokertexter.html).*
+*Some documentation for this app is also [on my website](http://www.johnloeber.com/docs/pokertexter.html).*
 
 This repository contains source code and setup instructions for PokerTexter, an SMS app that gives you an advantage when playing Texas Hold 'Em. Running the app will let you text the PokerTexter phone number with your cards and number of other players, and it texts you back some pre-flop statistics:
 * % Chance of Winning
