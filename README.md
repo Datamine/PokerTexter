@@ -68,7 +68,7 @@ There are some other limitations on the app because you're using both Twilio's a
 
 The scope of this app is currently quite limited: it doesn't permit you to submit cards beyond your initial two. It is easily possible to also support additional known cards (e.g. cards on the table, known burned cards, etc.) but the usefulness of such features is limited because additional cards are made known only in the later stages of the game, when probability can be more easily intuitively approximated (it's easy to figure out your outs and their approximate odds), and the psychological aspect of the game becomes more important. Nonetheless, I aim to add such features in the near future.
 
-The app currently does not compute ties correctly. When any two hands on the table tie, the entire table is interpreted to have tied -- even though in reality, only the best two hands tie and split the pot. PokerTexter is currently written such that the entire table ties, i.e. everyone gets back their initial bet. Thankfully, ties are generally so rare such that expected gain is only minimally affected. However, this is by far the most serious flaw currently present in the software.
+The app currently does not compute ties correctly for more than two players. When any two hands on the table tie, the entire table is interpreted to have tied -- even though in reality, only the best two hands tie and split the pot. PokerTexter is currently written such that the entire table ties, i.e. everyone gets back their initial bet. Thankfully, ties are generally so rare such that expected gain is only minimally affected. However, this is by far the most serious flaw currently present in the software.
 
 ## Disclaimer
 
