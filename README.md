@@ -50,6 +50,14 @@ Following are the steps you need to take to get PokerTexter to run. Note that th
 
 If you make any changes to `run-pokertexter.py` or to any of the other files in `PokerTexter`, you will need to relaunch the app for the changes to propagate. You can relaunch easily by typing `./launch`. No other steps will be necessary, **unless** you create a new Heroku app and thereby create a new Heroku app URL, in which case you'll need to amend your Twilio Numbers Page appropriately.
 
+## Use instructions
+
+Send messages to PokerTexter in form `RANK1 RANK2 SUITING OTHER_PLAYERS`, where:
+* `RANK1` is the rank of your first card. Admissible ranks are {2,3,4,...,10,J,Q,K,A}. For the numberic cards, you can type in the numeral (e.g. "2") or write it out (e.g. "two"). For the non-numeric cards, you can write them out (e.g. "jack") or use the first letter (e.g. "j"). Capitalization doesn't matter.
+* `RANK2` is the rank of your second card. Similar to rank1.
+* `SUITING` describes whether or not your two cards share the same suit. If they do, you should write `suited`. If they do not, you should write `offsuit` or `unsuited`. 
+* `OTHER_PLAYERS` is the number of other players, i.e. number of players in the round excluding yourself.
+
 ## Remarks
 
 While the probabilities of winning and tying scale as you would expect in the number of players, the expected gains change sign in some cases. For example, if you're playing with nine other players, a 9-K offsuit has an expected gain of -0.0036. It would be inadvisable to play that hand. However, if you're playing with two other players, a 9-K offsuit has an expected gain of 0.184. You'd want to play that hand.
