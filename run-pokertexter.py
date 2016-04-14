@@ -166,11 +166,11 @@ def respond():
             # line[4] is going to be 'o' or 's' for offsuit/suited, respectively
             if line[0]==lower and line[2]==higher and line[4]==suiting[0]:
                 split_line = line.strip().split("\t")
-                # cast to % for easier reading
+                # convert to percentage for easier reading
                 p_win = "P(win): " + str(float(split_line[3]) * 100) + "%\n"
                 p_tie = "P(tie): " + str(float(split_line[4]) * 100) + "%\n"
-                eg = "Expected unit gain: " + split_line[5]
-                resp.message(p_win + p_tie + eg)
+                expected_gain = "Expected unit gain: " + split_line[5]
+                resp.message(p_win + p_tie + expected_gain)
                 return str(resp)
 
 if __name__ == '__main__':
