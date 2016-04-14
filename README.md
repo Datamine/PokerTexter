@@ -26,7 +26,7 @@ Following is a list of items in this repository and notes on what they're for:
 * `lookup-tables/lookup-table-n`: this is a lookup table, mapping any starting hand (on a table with *n* players) to probabilities and expected gains.
 * `Procfile`: necessary for the Heroku app to run.
 * `requirements.txt`: requirements for `run-pokertexter.py`. Heroku needs the requirements, so as to install any necessary packages for the app.
-* `generate-lookup-tables`: folder containing code for generating the lookup tables. Not essential to `run-pokertexter.py`.
+* `generate-lookup-tables`: folder containing code for generating the lookup tables. Items in here are not essential to `run-pokertexter.py`.
 * `generate-lookup-tables/generate-lookup-table.py`: for a number of players *n*, generate `lookup-table-n`. Relies on the `deuces` library.
 * `generate-lookup-tables/deuces`: the [deuces library](https://github.com/worldveil/deuces) for fast poker hand evaluation.
 
